@@ -1,0 +1,2 @@
+# hakusAngular
+inspection for angular
