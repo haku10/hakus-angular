@@ -1,12 +1,5 @@
 # hakusAngular
 inspection for angular
 
-## グローバル環境のアップデート
-`docker-compose run angular-app npm uninstall -g @angular/cli`
-`docker-compose run angular-app npm cache clean`
-`docker-compose run angular-app npm install -g @angular/cli@latest`
-
-## ローカル環境のアップデート
-`docker-compose run --rm angular-app rm -rf node_modules dist`
-`docker-compose run --rm angular-app npm install --save-dev @angular/cli@latest`
-`docker-compose run --rm angular-app npm install`
+##　※外側にnode_modulesを作成したい場合
+`docker run --rm -v $PWD:/myapp -w /app node:latest npm install`

@@ -6,5 +6,6 @@ services:
     ports:
       - "40001:4200"
     volumes:
-      - ./:/myapp
+      - .:/myapp
+      - /myapp/node_modules
     tty: true
